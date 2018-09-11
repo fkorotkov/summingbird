@@ -8,7 +8,6 @@ test_task:
     LOG4J: file://$CIRRUS_WORKING_DIR/project/travis-log4j.properties
     matrix:
       TRAVIS_SCALA_VERSION: 2.12.4
-      TRAVIS_SCALA_VERSION: 2.11.12
   ivy_cache:
     folder: $HOME/.ivy2/cache
     fingerprint_script: echo $TRAVIS_SCALA_VERSION
