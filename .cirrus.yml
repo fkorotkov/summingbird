@@ -1,7 +1,5 @@
 container:
   image: bigtruedata/sbt:latest
-  cpu: 4
-  memory: 12G
 
 test_task:
   env:
