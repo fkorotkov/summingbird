@@ -15,4 +15,5 @@ test_task:
   sbt_cache:
     folder: $HOME/.sbt
     fingerprint_script: echo $TRAVIS_SCALA_VERSION
+  printenv_script: printenv
   test_script: ./sbt -Dlog4j.configuration=$LOG4J -DsequentialExecution=true ++$TRAVIS_SCALA_VERSION clean coverage test coverageReport mimaReportBinaryIssues
